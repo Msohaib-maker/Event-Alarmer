@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sfa_RootId"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:fillViewport="true">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:background="@color/bubbleColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:background="@color/bubbleColor"
+                android:id="@+id/sfa_customToolBarId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_marginEnd="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_marginEnd="10dp"
+                            android:id="@+id/sfa_optionMenu"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:visibility="gone"
+                            android:src="@drawable/options_ios" />
+
+                        <ImageView
+                            android:visibility="gone"
+                            android:layout_marginEnd="10dp"
+                            android:id="@+id/sfa_editId"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
+
+
+                            android:src="@drawable/edit2" />
+
+
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/sfa_ToolBarDoneBtnId"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="@color/blue_700"
+                            android:text="Done"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/sfa_backBtnId"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_gravity="top"
+                            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                            android:layout_width="22dp"
+                            android:layout_height="match_parent"/>
+
+                        <TextView
+                            android:gravity="center_vertical"
+                            android:textStyle="bold"
+                            android:textSize="22sp"
+                            android:textColor="#2196F3"
+                            android:text="Lists"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/belowLineId"
+                android:layout_gravity="bottom"
+                android:visibility="gone"
+                android:background="@color/blue_400"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/TEXT"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:text="All"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/sfa_NameId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/sfa_AllList_reminderRecycleViewId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+
+
+</LinearLayout>

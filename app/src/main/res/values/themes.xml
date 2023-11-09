@@ -1,0 +1,98 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.EventCheck" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/grey_100</item>
+        <!-- Customize your theme here. -->
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+
+        <item name="android:navigationBarColor">@color/navigation_bar_color_light</item>
+
+
+    </style>
+
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_dialog</item>
+    </style>
+
+
+    <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/black</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="buttontheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+    </style>
+
+    <style name="CustomTimePickerTheme" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="colorPrimary">@color/the_grey</item>
+        <item name="colorAccent">@color/grey</item>
+    </style>
+
+    <style name="MyKeyboardTheme" parent="@android:style/Theme">
+        <item name="android:keyBackground">@drawable/my_keyboard_key_background</item>
+        <item name="android:keyTextColor">#FFFFFF</item>
+        <item name="android:keyTextSize">20sp</item>
+    </style>
+
+    <style name="Screen">
+        <item name="android:background">@color/grey_100</item>
+    </style>
+
+    <style name="TEXT">
+        <item name="android:textColor">@color/grey_700</item>
+    </style>
+
+    <style name="TEXT1">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <color name="bubbleColor">@color/white</color>
+
+    <color name="InputColorOfFirstBottomSheet">@color/grey_200</color>
+
+    <color name="bottomSheet">@color/white</color>
+
+    <color name="ListDividerColor">@color/grey_100</color>
+
+    <style name="BottomLayoutStyle">
+        <item name="android:background">@color/grey_100</item>
+    </style>
+
+
+    <style name="CardBoxStyle">
+        <item name="background">@color/white</item>
+    </style>
+
+    <color name="reminderColor">@color/lightBlue</color>
+
+
+</resources>
